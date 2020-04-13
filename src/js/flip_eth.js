@@ -695,7 +695,7 @@ if (typeof window.ethereum !== 'undefined' && window.ethereum.networkVersion &&
     }
 }
 if (usingRemoteProvider) {
-    var infura = "wss://mainnet.infura.io/ws/v3/cabe301d837048959747eaa4415846b7";
+    var infura = "wss://mainnet.infura.io/ws/v3/9dd97045b2ec4e55b88a58275d9a3490";
     var provider = new Web3.providers.WebsocketProvider(infura);
     web3 = new Web3(provider);
     console.log("Using remote web3 provider");
