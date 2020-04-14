@@ -1000,7 +1000,7 @@ var showEvents = async function showEvents(someID) {
                 }
                 auctions[flipId]["txFrom"] = tx.from;
             }
-            let txHref = `https://etherscan.io/tx/${event.transactionHash}`;
+            let txHref = `https://kovan.etherscan.io/tx/${event.transactionHash}`;
             let txLink = `<a target="_blank" href="${txHref}">Tx:..${event.transactionHash.slice(-3)} Info</a>`;
             values += `from: ${from} | ${txLink} >>`;
         });
