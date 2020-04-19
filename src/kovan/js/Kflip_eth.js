@@ -1026,7 +1026,7 @@ var showEvents = async function showEvents(someID) {
 
 // Fetch old events to populate list at initial load
 var lastBlockfetch = 0;
-var blocksBack = 1200000; // 1200.000 back (6K blocks per day * 1800 days = 1200K approx.)
+var blocksBack = 500000; // 1200.000 back (6K blocks per day * 1800 days = 1200K approx.)
 var fetchAuctions = async function fetchAuctions(someID) {
     lastBlockfetch = await web3.eth.getBlockNumber();
     let fromBlock = lastBlockfetch - blocksBack;
