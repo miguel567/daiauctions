@@ -1121,7 +1121,7 @@ function showAuctionDetails(id){
 
     msg += 'Started: <br/>';
     msg += `- DATE: ${auction.kickDate} <br/>`;
-    msg += `- LOT: ${auction.kickLot.toLocaleString('en')} eth - BID: ${auction.bid.toLocaleString('en')} dai - Bid Dai Price: ${bidDaiPrice.toLocaleString('en')} <br/>`;
+    msg += `- LOT: ${auction.kickLot.toLocaleString('en')} eth - BID: ${auction.bid.toLocaleString('en')} dai (BID Dai Price: $${bidDaiPrice.toLocaleString('en')} eth/dai)<br/>`;
     msg += `- ETH OSM: $${auction.kickPrice} eth/dai <br/><br/>`;
 
     msg += `Bids received: ${auction.tends + auction.dents} <br/><br/>`;
